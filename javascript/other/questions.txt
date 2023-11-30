@@ -1,0 +1,5 @@
+Giải thích var và let trong loop for khi có async action
+
+0.1 + 0.2 = ?
+
+Học quá nhiều kiến thức rời rạc mà không chịu liên kết chúng cho các bài tập thực hành

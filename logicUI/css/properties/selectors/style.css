@@ -1,0 +1,15 @@
+/* .combinators div p{
+    color: red;
+} */
+
+/* .combinators div > p{
+    color: red;
+}
+
+.combinators p + p{
+    color: red;
+} */
+
+.combinators p ~ p{
+    color: red;
+}

@@ -1,0 +1,4 @@
+- Là một object chỉ khởi tạo một lần duy nhất trong suốt chương trình chạy
+  - dù cho bạn có gọi khởi tạo nó bao nhiều lần đi nữa
+- Là cách khai báo object
+- Giúp cho chương trình không bị lãng phí bộ nhớ, chiếm ít ram hơn

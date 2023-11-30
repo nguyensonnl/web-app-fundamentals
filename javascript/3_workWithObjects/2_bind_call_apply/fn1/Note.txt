@@ -1,0 +1,8 @@
+- Chỉ có các function mới có thể gọi 3 hàm này
+- Khi dùng 3 hàm này, this sẽ đề cập đến object được truyền vào
+- call:
+  - Gọi hàm cho phép bạn truyền vào 1 object và các đối số phân cách bởi dấu phẩy
+- apply:
+  - Tương tự call. Gọi hàm, cho phép bạn truyền vào 1 object và tiếp theo là các đối số thông qua mảng
+- bind:
+  -Trả về 1 hàm mới. Cho phép truyền vào 1 object và các đối số phân cách nhau bởi dấu phẩy

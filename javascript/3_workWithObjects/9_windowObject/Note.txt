@@ -1,0 +1,39 @@
+- window object được hỗ trợ trên trình duyệt. Nó đại diện cho cửa sổ trình duyệt
+- Tất cả global javascript object, function, biến(phải khai báo bằng var, not let/const) đều tự động trở thành thuộc tính(hoặc phương thức) của window object
+
+alert("Hello");
+window.alert("Hello");
+
+var gVar = 5;
+alert(window.gVar);
+
+Ngay cả document object(của html dom) cũng là 1 thuộc tính của window object
+
+window.document.getElementById("header");
+document.getElementById("header");
+
+Vậy nên nếu nó global object, function, biến thì bạn có thể không cần tiền tố window phía trước
+
+#Thuộc tính phương thức của window object:
+
+- window.innerHeight: Chiều cao bên trong cửa sổ trình duyệt(pixel)
+- window.innerWidth: Chiều rộng bên trong cửa sổ trình duyệt(pixel)
+- window.open(): mở 1 cửa sổ
+- window.close(): đóng cửa sổ hiện tại
+- window.resizeTo(): resize cửa sổ hiện tại
+
+#window location:
+
+- window.location object có thể được sử dụng lấy thông tin địa chỉ url hiện tại
+- Chuyển hướng trình duyệt sang 1 trang khác
+
+
+window.location.href: return vể url trang hiện tại
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+window.location.assign("https://youtobe.com");
+});
+

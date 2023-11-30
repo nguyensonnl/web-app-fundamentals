@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: 0 auto;
+        gap: 20px;
+      "
+    >
+      <input class="email" type="text" placeholder="Email" />
+      <input class="password" type="password" placeholder="Password" />
+      <textarea class="description" placeholder="Description"></textarea>
+      <label>
+        <input type="radio" class="gender" value="male" name="gender" />
+        Nam
+      </label>
+      <label>
+        <input type="radio" class="gender" value="fe-male" name="gender" />
+        Nữ
+      </label>
+
+      <select class="birthday">
+        <option value="1990">1990</option>
+        <option value="1995">1995</option>
+        <option value="1997">1997</option>
+      </select>
+
+      <label>
+        <input type="checkbox" class="hobby" value="Play game" />
+        Play game
+      </label>
+      <label>
+        <input type="checkbox" class="hobby" value="Listening to music" />
+        Listening to music
+      </label>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+### Nhúng js vào html
+
+- `script></script>`
+- file app.js
+
+### Comment
+
+- `//`
+- `/**/`
+
+
+#Nhúng js vào file html
+- <script></script>
+- Viết file app.js
+
+syntax, setup
+
+comment
+
+Sử dụng các câu lệnh console
+
+Sử dụng tab console trên dev tool
+
+Popup
+
+alert
+
+confirm
+
+prompt

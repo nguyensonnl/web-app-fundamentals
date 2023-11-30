@@ -1,0 +1,6 @@
+nodemy
+
+#Techniques:
+if else
+for
+function

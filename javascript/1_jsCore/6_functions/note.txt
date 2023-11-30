@@ -1,0 +1,6 @@
+named function
+anonymous function
+parameters function
+parameters default function
+return function
+arrow function

@@ -1,0 +1,19 @@
+#Strict Mode
+- Chế độ nghiêm ngặt: Tính năng ES5
+- Viết mã js theo cách nghiêm ngặt hơn, tránh những lỗi thường gặp và có thêm
+- các quy tắc an toàn hơn khi làm việc với js
+
+#Kích hoạt
+"use strict"
+
+- Kích hoạt trọng 1 phạm vi: hàm, tập lệnh. Js sẽ thực thi mã theo 1 tập hơn các quy tắc nghiêm ngặt hơn
+- Tránh những vấn đề: sử dụng biến chưa được khai báo, gán giá trị cho hằng số, sử dụng từ khóa riêng(eval, arguments)
+  một cách an toàn hơn
+
+#Lợi ích của strick mode
+- Báo lỗi cho các hành vi không an toàn: Sẽ thông báo lỗi cho các tính huống mà trước đây js có thể lặng lẽ bỏ qua
+  - Vd: Gán giá trị cho biến chưa được khai báo
+- Ngăn chặn các từ khóa riêng: Không cho phép sử dụng cá từ khóa riêng của js
+- Ngăn chặn gán giá trị cho hằng số
+- Ngăn chặn các hành vi không an toàn khác
+  - Vd: Không cho phép xóa biến bằng từ khóa delete

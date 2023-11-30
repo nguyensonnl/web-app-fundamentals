@@ -1,0 +1,43 @@
+#Web Storage và Cookie
+- Web storage: Local Storage và Session Storage
+- Web storage lưu trữ được nhiều dữ liệu và dễ dùng hơn Cookie
+- Cả 3 đều dùng đễ lưu thông tin trên trình duyệt để tiện xử lý sau này
+
+Khác biệt lớn nhất giữa Local Storage, Session Storage và Cookie là thời gian lưu trên trình duyệt
+
+#Local Storage
+- Là Web Storage
+- Lưu lại vĩnh viễn trên trình duyệt
+- Dung lượng khoảng 5Mb - 10Mb
+- Các trang khác không thể truy cập đến Local Storage nếu như khác domain
+
+//Thêm Item
+localStorage.setItem("name", "John Doe");
+//Đọc Item
+localStorage.getItem("name"); //John Doe);
+//Xóa Item
+localStorage.removeItem("name");
+//Xóa hết localStorage
+localStorage.clear():
+
+#Session Storage
+- Là Web Storage giống Local Storage
+- Lưu lại trong 1 phiên dùng web thôi, đóng tab là xóa hết data
+- Dung lượng khoảng 5Mb - 10Mb
+- Các trang khác không thể truy cập đến Session Storage nếu như khác domain
+
+//Thêm Item
+sessionStorage.setItem("name", "John Doe");
+//Đọc Item
+sessionStorage.getItem("name"); //John Doe);
+//Xóa Item
+sessionStorage.removeItem("name");
+//Xóa hết localStorage
+sessionStorage.clear():
+
+#Cookie
+- Không phải là web storage
+- Thời gian lưu trữ data có giới hạn, khi hết hạn thì cookie tự động xóa
+- Dung lượng lưu trữ chỉ khoảng 4KB => Nên lưu trữ những data đơn giản, càng ít càng tốt
+- Cookie sẽ tự động truyền từ server xuống client và truyền từ client lên server thông qua mỗi header request
+- Có thể cấu hình để các sub domain ví dụ >sub1.domain.com có thể set cookie cho sub2.domain.com. Lưu ý phải cùng domain cha

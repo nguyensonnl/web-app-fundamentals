@@ -1,0 +1,38 @@
+## Lập trình bất đồng bộ:
+- Cả môi trường trình duyệt và nodejs, js đều chạy đơn luồng
+- Trong chương trình đồng bộ, nếu bạn có 2 dòng code theo thứ tự L1, L2 thì L2 không thể bắt đầu chạy
+nếu L1 chưa chạy xong
+- Trong những chương trình bất động bộ, nếu bạn có 2 dòng code theo thứ tự L1, L2. Trong khi L1 sẽ được thực hiện
+một số tác vụ và hoàn thành trong tương lai thì L2 có thể chạy trước khi L1 hoàn thành
+
+## JS Runtime
+- JS vẫn sẽ chạy đồng bộ,  sẽ chạy bất động bộ khi có action async: callback, promise, async await
+- Ngoài call stack còn có: Web APIs, Event Loop, Callback Queue
+- JS V8 Engine(Nodejs, Browser)
+
+### Memory heap/stack
+- Các tác vụ phân bổ vùng nhớ sẽ thực hiện ở đây
+
+### Call stack
+- Là 1 cấu trúc dữ liệu dạng ngăn xếp(stack): dùng để chưa thông tin về hoạt động của chương trình máy tính
+trong lúc thực thi
+- Hoạt động theo kiểu LIFO(Last In First Out): tức là thằng vào sau cùng nhưng được thực hiện và thoát ra khỏi
+ngăn xếp đầu tiên
+
+### Web APIs
+- API, http requests, timers, events
+
+### Event Loop
+
+### Callback Queue
+- callbacks: sent from web api's container
+- fifo: first in first out (queue data structure)
+- only goes to stack when stack is empty
+
+### Microtask Queue
+
+### Blocking, non-Blocking
+
+### Single-threaded
+
+### Concurrency

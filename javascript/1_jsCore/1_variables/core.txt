@@ -1,0 +1,29 @@
+#var
+
+Trước khi có let và const, var được sử dụng để khai báo biến trong js
+var: function scope: Biến được khai báo bằng var chỉ có thể hoạt động trong phạm vi của hàm chứa nó
+hoisting: Truy cập được biến trước cả khi khai báo
+
+#let
+
+ES6: let được giải quyết các vấn đề liên quan đế scope và hoisting của var
+Hoạt động block scope: {}, if, loops
+Not hoisting
+
+#const
+
+ES6
+Block scope
+Phải gán giá trị ngay khi khai báo của biến này không thể thay đổi sau đó
+Khai báo hằng số, biến không thay đổi giá trị trong quá trình chạy
+
+#hoisting
+
+Khi js run, các biến và hàm được xử lý trong 2 bước: khai báo và thực thi
+Hoisting là quá trình khi các khai báo biến và hàm được đưa lên phạm vi(scope) của nơi chúng được khai báo
+Cho phép bạn truy cập và sử dụng biến và hàm trước cả khi chúng được khai báo trong mã nguồn
+
+#scope
+- Global scope
+- Function scope / local scope: var
+- Block scope: const, let

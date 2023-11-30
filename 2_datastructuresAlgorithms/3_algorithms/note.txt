@@ -1,0 +1,43 @@
+### Độ phức tạp của thuật toán
+O(1)
+O(logn)
+O(căng n)
+O(n)
+
+
+O(1)
+Các công thức toán học chỉ tính toán 1 kết quả
+Phụ thuộc vào hằng số
+```javascript
+let a = 10;
+let b = 20;
+let c = 20;
+let d = a + b + c + 100;
+```
+
+Độ phức tạp về thuật toán của vòng lặp là số lần lặp mà vòng lặp chạy
+Phụ thuộc vào tham số đầu vào
+O(n)
+```javascript
+for(let i = 0; i < n; i++){
+
+}
+```
+
+O(nm)
+```javascript
+for(let i = 0; i<n; i++){
+    for(let j = 0; j<m; j++){
+
+    }
+}
+```
+
+O(n^2)
+```javascript
+for(let i = 0; i<n; i++){
+    for(let j=0; j<n; i++){
+
+    }
+}
+```

@@ -1,0 +1,70 @@
+1. boolean
+console.log(typeof true);
+console.log(typeof false);
+->Đang log ra value
+->Kiểu dữ liệu của một biến là kiểu dữ liệu của value
+var isTrue = true;
+console.log(typeof isTrue);
+
+2. number
+3. string
+4. undefined
+5. null
+
+#Kiểu dữ liệu tham chiếu
+#array
+1. Tại sao lại cần array
+Lưu nhiều giá trị tại một thời điểm
+
+2. Khai báo
+var cars = ["Honda", "BMW", "Vinfast"];
+
+3. Cách thành phần cấu tạo
+console.log(cars)
+console.log(cars.length)
+- cars: Tên array
+- length: chiều dài hay số phần tử của array
+- Các value items của array
+- Các key của mảng được đánh số bắt đầu từ 0
+- Giữa key và value đươc ngăn cách bằng dấu : 
+
+4. Cách truy xuất value, set value
+console.log(cars[0]);
+console.log(cars[1]);
+console.log(cars[2]);
+
+gán lại value;
+cars[0] = "Toyota";
+
+5. Các hàm thông dụng
+
+#object
+1. Tại sao lại cần object?
+2. Khai báo
+var student = {
+    name: "Duy",
+    age: 13,
+    class: "7a"
+}
+3. Các thành phần
+4. Các truy xuất, set value
+student.name;
+->name phải tường minh, name phải nằm trong object
+x = "name";
+student["name"]
+->dynamic, truy xuất qua 1 biến, lấy key qua biến
+5. Liên hệ với array
+array là trường hợp đặc biệc của object
+với key index bắt đầu là 0
+var cars = [
+    "honda",
+    "bmw",
+    "vinfast"
+]
+console.log(cars[0]);
+for(let i = 0; i < cars.length; i++){
+    console.log(i);
+    console.log(cars[i])
+}
+
+6. Các hàm thông dụng trong object

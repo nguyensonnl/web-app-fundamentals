@@ -1,0 +1,3 @@
+- Trong js là từ khóa đề cập đến object mà nó thuộc về
+- This trong method(object): đề cập đến object chủ quản
+- This khi đứng 1 mình: đề cập đến global object, browser: object window

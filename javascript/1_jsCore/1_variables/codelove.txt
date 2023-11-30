@@ -1,0 +1,81 @@
+1. Tìm hiểu câu lệnh đầu tiên console.log()
+console.log("hello world");
+
+2. Cách khai báo 1 biến
+var nameInfo;
+
+3. Khởi tạo giá trị ban đầu cho Biến
+nameInfo = "codelove";
+
+4. Khai báo và khởi tạo cùng 1 câu lệnh
+var nameInfo = "codelove";
+
+5. Cập nhật giá trị biên
+var nameInfo = "codelove";
+nameInfo = "Hello world";
+
+#let, const
+var sẽ hosting
+let, const sẽ không bị hoisting
+
+var x = 10;
+var x = 20;
+
+# Scope của biến
+1. Biến được tạo ra
+let x = 20;
+
+2. Biến được update hay thay đổi value
+x = 30;
+x = 50;
+
+3. Scope của biến
+- Global
+- Function/Local
+- Block scope: {...}
+- Cách phán đoán value của biến hiện tại vị trí nào trong code
+  - Xác định scope của câu lệnh lấy giá trị biến cần phán đoán
+  - Nếu trong phạm vi đó không có nó có thể di chuyển lên phạm vi cha gần nhất để nhận giá
+
+```javascript
+let x = "global";
+if(true){
+    let x = "block scope";
+    x = "Update value";
+}
+console.log(x);//Update value
+console.log(x);//global
+
+let a = "global";
+function abc(){
+    let a = "Function";
+    a = "change value";
+}
+abc();
+console.log(a);//change value
+abc();
+console.log(a);//global
+```
+
+### Phân biệt var, const, let
+```javascript
+// 1. Khai báo lại cùng tên biến trong cùng 1 phạm vi
+var x = "global scope";
+var x = "global scope 2";
+let a = "global scope";
+let a = "global scope";//error
+
+//2. scope: var ->function scope, let: block scope
+- Khai báo var trong function sẽ tạo ra scope mới
+- Khái báo let trong block sẽ tạo ra scope mới
+
+//3. var sẽ hoisting, let, const không bị hoisting
+
+//4. Gán lại value, update value, var, let: có, const: không
+const z = {
+    name: "codelove"
+}
+z.name = "Hello"
+//Thay đổi các item của object, chứ không phải gán lại
+//Mutable
+```

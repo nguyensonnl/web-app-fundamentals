@@ -1,0 +1,11 @@
+html document run -> DOM: cấu trúc dạng tree
+biến các element html thành các object
+
+### Truy cập DOM
+1. Trả về 1 phần tử đầu tiên trong dom thỏa mãn
+let x = document.querySelector(".class");
+console.log(x);
+
+2. Lấy ra nhiều phần tử trong dom
+let x = document.querySelectorAll(".class");
+console.log(x);

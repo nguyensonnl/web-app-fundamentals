@@ -1,0 +1,14 @@
+# Kiểu dữ liệu tham trị:
+- boolean
+- number
+- string
+- undefined
+- null
+- symbol
+
+# Kiểu dữ liệu tham chiếu:
+- objects
+- arrays
+- function
+
+Convert to Number: +value

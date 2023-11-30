@@ -1,0 +1,20 @@
+Validate form
+- Lấy ra các value
+- So sánh value đó với các rules
+
+1. Sử dụng if else để check
+Vấn đề:
+Nhưng nếu không phải là 3, 4, 5 fields
+mà là hàng chục field, hàng chăm fields thì phải làm như nào?
+2. Sử dụng vòng lặp for để tránh trùng lặp code
+
+Khác nhau ở cái cách xử lý data ở từng level
+Khi viết hàm bạn phải biết được các tham số cần truyền vào
+
+Tư duy hướng thủ tục: Chỉ sử dụng if else, for
+Tư duy hướng hàm: sử dụng hàm để tái sử dụng code để trách trùng lặp code
+Tư duy hướng đối tượng: Viết một lần sử dụng nhiều nơi
+
+Code chạy là được, hiểu luồng code, hiểu luồng xử lý
+
+Mục đích của hàm là tái sử dụng

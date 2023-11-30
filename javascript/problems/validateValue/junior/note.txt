@@ -1,0 +1,5 @@
+const rules = {
+    name: required,
+    email: required | minLength: 3 | email,
+    password: required | minLength:8 | same_password: confirm_password
+}
