@@ -1,4 +1,4 @@
-Validate form
+Validate Form
 - Lấy ra các value
 - So sánh value đó với các rules
 

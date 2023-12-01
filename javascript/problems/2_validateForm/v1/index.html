@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Validate Form</title>
+  </head>
+  <body>
+    <div class="main">
+      <form class="form">
+        <h3 style="text-align: center">Sign up your account</h3>
+        <div class="form-group">
+          <input
+            type="text"
+            name="username"
+            class="username"
+            placeholder="Enter your username"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Enter your email"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            class="password"
+            placeholder="Enter your password"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name="passwordConfirm"
+            class="password-confirm"
+            placeholder="Enter your confirm password"
+          />
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" class="btn-signup">Submit</button>
+      </form>
+    </div>
+    <script src="./registerIntern.js"></script>
+  </body>
+</html>

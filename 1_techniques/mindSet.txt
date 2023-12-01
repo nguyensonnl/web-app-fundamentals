@@ -1,0 +1,36 @@
+#Các kỹ năng lập trình
+- Kỹ thuật lập trình
+- Cáu trúc dữ liệu và giải thuật
+- Lập trình hướng đối tượng
+
+#Concepts
+variablees
+datatypes
+operators
+condition: if else, switch case
+loops
+functions
+handle errors
+
+tư duy hướng thủ tục
+tư duy hướng hàm
+tư duy hướng đối tượng
+
+nên học chậm lại, đừng có chạy theo công nghệ
+
+#mistake
+Tập trung quá nhiều vào công nghệ, bị cuốn vào các công nghệ
+Sử dụng các công nghệ để làm dự án mà chưa nắm chắc kiến thức nền
+Bạn làm, bạn search, sản phẩm chạy, ok đấy
+Vấn đề là bạn học được gì
+Sau khi làm xong project thì sẽ như nào?
+
+Trường phái học lập trình thông qua dự án
+- Trong lúc làm dự án vừa học vừa làm
+- Rất là khó khăn khi mới bắt đầu
+
+Họ không dạy tư duy code
+Họ dạy cách code ra sản phẩm
+
+#Logic data
+- Validate Form
