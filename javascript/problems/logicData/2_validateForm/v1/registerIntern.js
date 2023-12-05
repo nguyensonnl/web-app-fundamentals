@@ -48,6 +48,7 @@ const handleSignUpForm = (e) => {
 
   let required = requiredValidate(password, "Password không được để trống");
   let length;
+
   if (required) {
     length = lengthValidate(password, "Password tổi thiểu 8 ký tự");
   }

@@ -1,1 +1,24 @@
 ### Concepts Javascript
+
+- syntax
+- variables
+- datatypes
+- operators
+- condition: if else, switch case
+- loops
+- function
+- handle error
+- number and method
+- string and method
+- date time
+- object Math
+- object window
+- object and method
+- this, new
+- bind, call, apply
+- browser: event, dom, bom, storages
+- asynchorous: callback, promise, async await
+- js runtime
+- js es6:
+    - rest
+    - arrow function
