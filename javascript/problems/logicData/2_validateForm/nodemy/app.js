@@ -8,7 +8,7 @@ const username = document.querySelector(".username");
 const password = document.querySelector(".password");
 const email = document.querySelector(".email");
 const confirmPassword = document.querySelector(".confirm-password");
-console.log(confirmPassword.closest(".form-control"));
+//console.log(confirmPassword.closest(".form-control"));
 
 const showError = (input, message) => {
   const formControl = input.parentElement;
@@ -27,6 +27,7 @@ const showSuccess = (input) => {
 const checkRequired = (inputArr) => {
   let isRequired = false;
   inputArr.forEach((input) => {
+    console.log(input.value);
     if (input.value.trim() === "") {
       showError(input, `${getFieldName(input)} is required`);
       isRequired = true;

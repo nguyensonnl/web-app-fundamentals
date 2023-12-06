@@ -22,3 +22,7 @@
 - js es6:
     - rest
     - arrow function
+
+
+working with data
+javascript of data: objects and array
