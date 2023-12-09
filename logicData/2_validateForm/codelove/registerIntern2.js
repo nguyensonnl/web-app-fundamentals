@@ -91,17 +91,11 @@ const handleSubmitForm = (e) => {
 
   if (password2Required) {
     password2Length = checkLength(confirmPasswordElement, 6);
-    console.log(password2Length);
-    console.log(password2Required);
-  } else if (password2Required && password2Length) {
-    console.log("Check");
-  } else {
-    console.log("Hello");
   }
 
-  //   if (password2Required && password2Length) {
-  //     checkMatch(confirmPasswordElement, passwordElement);
-  //   }
+  if (password2Length && password2Required) {
+    checkMatch(passwordElement, confirmPasswordElement);
+  }
 };
 
 btnSignUp.addEventListener("click", handleSubmitForm);

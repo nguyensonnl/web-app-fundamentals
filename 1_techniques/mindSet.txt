@@ -4,13 +4,13 @@
 - Lập trình hướng đối tượng
 
 #Concepts
-variablees
-datatypes
-operators
-condition: if else, switch case
-loops
-functions
-handle errors
+- variablees
+- datatypes
+- operators
+- condition: if else, switch case
+- loops: Tư duy về không gian
+- functions
+- handle errors
 
 tư duy hướng thủ tục
 tư duy hướng hàm
@@ -34,3 +34,8 @@ Họ dạy cách code ra sản phẩm
 
 #Logic data
 - Validate Form
+
+
+#Frontend
+- Render data
+- API management
