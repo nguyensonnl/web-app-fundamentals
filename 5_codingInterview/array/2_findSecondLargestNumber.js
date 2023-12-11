@@ -1,4 +1,3 @@
-// second array
 function secondLargestNumber(arr) {
   let largest = arr[0];
   let second = null;

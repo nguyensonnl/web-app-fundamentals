@@ -12,9 +12,10 @@
 - functions
 - handle errors
 
-tư duy hướng thủ tục
-tư duy hướng hàm
-tư duy hướng đối tượng
+#mindset
+- tư duy hướng thủ tục
+- tư duy hướng hàm
+- tư duy hướng đối tượng
 
 nên học chậm lại, đừng có chạy theo công nghệ
 

@@ -1,0 +1,3 @@
+
+### Abstraction(Trừu tượng)
+- interface, abstract class

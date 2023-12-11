@@ -9,14 +9,7 @@ Kiểm tra class với "instanceof"
 typeof kiểm tra giá trị nguyên thủy, return string
 instanceof kiểm tra với các object, return true/false
 
-### Encapsulation(Đóng gói), hiding information
-access modifier: public, private, protected, internal
 
-### Inheriance(Kế thừa)
 
-### Polymorphism(Đa hình)
-- Một hành động có thể được thực hiện bằng nhiều cách khác nhau
-- overloading, overriding
 
-### Abstraction(Trừu tượng)
-- interface, abstract class
+

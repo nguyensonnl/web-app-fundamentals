@@ -1,0 +1,3 @@
+
+### Encapsulation(Đóng gói), hiding information
+access modifier: public, private, protected, internal

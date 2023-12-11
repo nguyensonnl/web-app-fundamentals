@@ -1,12 +1,15 @@
 //Input: [1, 2, 3, 2, 4, 5, 7, 1]
 //Output: [1, 2, 3, 4, 5, 7]
 
+const arr = [1, 2, 2, 3, 4, 10, 5];
+console.log(arr.indexOf(10));
+
 const removeDuplicateElementUsingSet = (arr) => {
   return [...new Set(arr)];
 };
 
 const removeDuplicateElementUsingFilter = (arr) => {
-  return arr.filter((el, idx) => arr.indexOf(el) === idx);
+  return arr.filter((item, idx) => arr.indexOf(item) === idx);
 };
 
 //So sánh value các cặp liền kề
@@ -33,3 +36,5 @@ const removeDuplicateElement = (arr) => {
 console.log(removeDuplicateElement([1, 2, 3, 2, 4, 5, 7, 1]));
 
 const getValueElementFirstDuplicate = (arr) => {};
+
+//check duplicate
