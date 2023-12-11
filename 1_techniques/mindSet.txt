@@ -34,6 +34,7 @@ Họ không dạy tư duy code
 Họ dạy cách code ra sản phẩm
 
 #Logic data
+- Get value
 - Validate Form
 
 
