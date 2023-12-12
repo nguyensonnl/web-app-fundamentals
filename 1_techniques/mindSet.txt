@@ -41,3 +41,11 @@ Họ dạy cách code ra sản phẩm
 #Frontend
 - Render data
 - API management
+
+
+# Mindset
+- Lựa chọn cách tiếp cận tốt ngay từ đầu
+- Nghĩ nhiều
+- Dành thời gian lựa chọn giải pháp và phân tích vấn đề
+- Chia nhỏ vấn đề giải quyết
+- Tư duy tối ưu cả hiệu năng và đồng bộ data

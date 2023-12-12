@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý danh mục</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <form class="category__form__add">
+        <div class="form__group">
+          <label>Tên danh mục</label>
+          <input
+            type="text"
+            class="category__name"
+            placeholder="Tên danh mục"
+          />
+        </div>
+        <button class="btn__category">Submit</button>
+      </form>
+
+      <table class="category__list">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody class="category__table"></tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

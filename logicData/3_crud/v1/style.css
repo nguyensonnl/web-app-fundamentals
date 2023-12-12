@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+thead tr {
+  background-color: green;
+  color: #fff;
+}
+thead tr td {
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category__form__add {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  width: 480px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.category__list {
+  width: 480px;
+}
