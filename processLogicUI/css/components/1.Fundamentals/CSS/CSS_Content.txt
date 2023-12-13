@@ -1,0 +1,50 @@
+1. Color:
+
+2. Text
+>color:
+
+>text-align: start, end, left, right, center, justify
+
+>vertical-align: baseline, text-top/bottom, sub/supper, top/bottom, middle
+>direction: rlt | ltr
+>unicode-bidi: bidi-override;
+
+>text-decoration:
+>text-decoraton-line:
+>text-decoraton-style:
+>text-decoration-color:
+>text-decoration-thickness:
+
+>text-shadow: x y shadow width color;
+
+>text-transform: uppercase, lowercase,
+
+>text-overflow:
+
+>white-space:
+->pre-line: giữ nguyên khoảng cách đầu cuối, bỏ khoảng trắng giữa
+
+Xử lý từ dài
+.word-break: keep-all, break-word, break-all
+.word-wrap: break-word, normal
+.overflow-wrap: break-word
+
+
+3. Font
+.font-family:
+.font-size:
+.font-weight:
+.font-style:
+.font-variant:
+
+4. Image:
+object-fit: cover, contain, fill, scale-down(normal);
+object-position:
+
+5. Background
+
+6. Link_Ul_Table
+.list-type:
+>list-type-style:
+>list-type-position:
+>list-type-image:

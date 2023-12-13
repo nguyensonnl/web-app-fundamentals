@@ -86,7 +86,6 @@ function addCategory() {
   showDataCategoryFromLocal();
 
   //6. reset form
-
   categoryElement.value = "";
 }
 
@@ -96,6 +95,7 @@ function handleProcessData(e) {
 
   //action delete
   if (clicked.classList.contains("btn__delete")) {
+    //get id
     const idDelete = clicked.getAttribute("data-id");
     const categoriesFilter = categories.filter((item) => item.id !== +idDelete);
 
@@ -119,7 +119,7 @@ function handleProcessData(e) {
     //4.1 Thay đổi text button đến update
     btnCategoryAdd.textContent = "Update";
     //4.2 Thêm class để biết là update
-    btnCategoryAdd.classList.add("update");
+    btnCategoryAdd.classList.add("update"); // Dấu hiệu nhận biết khi nào create, khi nào update
     //4.3 Thêm id để biết update cho object vào
     btnCategoryAdd.setAttribute("data-id", idUpdate);
   }

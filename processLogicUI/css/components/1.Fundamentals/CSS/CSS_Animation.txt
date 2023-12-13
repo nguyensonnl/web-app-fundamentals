@@ -1,0 +1,10 @@
++transition:
++transition-property:
++transition-duration:
++transition-delay:
++transition-timing-function: 
+ease: chậm nhanh chậm(default)
+linear: bằng nhau
+ease-in: nhanh dần
+ease-out: chậm dần
+ease-in-out: chậm chậm

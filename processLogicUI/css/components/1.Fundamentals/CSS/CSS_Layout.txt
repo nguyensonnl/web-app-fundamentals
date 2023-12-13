@@ -1,0 +1,27 @@
+box-sizing: border-box, content-box, padding-box
+
+1. position: static, relative, absolute, fixed, sticky
+top/right/bottom/left
+z-index
+
+2. display: none, inline, inline-block, block, flex, inline-flex, grid, inline-grid
+
+3. overflow/-x/-y: hidden, auto, clip, scroll, visible
+
+4. visibility: visible, hidden, collapse(table)
+
+6. float: right, left
+clear: right, left, both
+ 
+5. sizing:
+width, max-width, min-width
+height, max-height, min-height
+
+7. spacing:
+margin
+padding
+
+8. border:
+border
+border-radius
+outline

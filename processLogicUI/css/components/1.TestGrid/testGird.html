@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <title>Document</title>
+    <style>
+      @media (max-width: 739px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media (min-width: 740px) and (max-width: 1023px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid wide">
+          <ul class="header__group">
+            <li class="header__item">
+              <a href="" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Product</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="container wide grid">
+        <div class="row">
+          <div class="col l-4 c-12 m-4">This is left</div>
+          <div class="col l-8 c-12 m-8">This is right</div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="grid wide">This is footer</div>
+      </footer>
+    </div>
+  </body>
+</html>

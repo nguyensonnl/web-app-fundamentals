@@ -30,7 +30,7 @@ Trường phái học lập trình thông qua dự án
 - Trong lúc làm dự án vừa học vừa làm
 - Rất là khó khăn khi mới bắt đầu
 
-Họ không dạy tư duy code
+Họ không dạy tư duy code, tư duy giải quyết vấn đề, tìm ra các solution
 Họ dạy cách code ra sản phẩm
 
 #Logic data

@@ -1,0 +1,27 @@
+.header{
+    height: 90px;
+    background-color: orange;
+}
+
+.header__group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 90px;
+}
+
+.header__link{
+    margin-left: 40px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.container{
+    height: 500px;
+}
+
+.footer{
+    height: 350px;
+    background-color: slategrey;
+}

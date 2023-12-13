@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+  }
+  .content {
+    height: 800px;
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 20px;
+  }
+  #btn {
+    position: fixed;
+    right: 20;
+    bottom: 20;
+    border-radius: 6px;
+    padding: 16px;
+    background-color: orange;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 99;
+    opacity: 0.8;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  #btn:hover {
+    opacity: 0.8;
+  }
+
+  #btn.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
