@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.blog__wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.blog__img {
+  width: 35%;
+
+  background-color: #ccc;
+}
+.blog__content {
+  width: 65%;
+}
+
+.blog__content .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.blog__content .timeline {
+  margin: 6px 0;
+  display: flex;
+}
+
+.blog__content .content {
+  line-height: 1.5;
+}
+
+.blog__content .readmore {
+  margin: 10px 0;
+  outline: none;
+  padding: 8px 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.blog__content + .blog__wrapper {
+  border-bottom: 1px solid #ccc;
+}

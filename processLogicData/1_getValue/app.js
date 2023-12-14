@@ -16,6 +16,7 @@ const handleSubmit = (event) => {
       valueGender = allGender[i].value;
     }
   }
+  console.log(valueGender);
 
   const birthday = document.querySelector(".birthday").value;
 
