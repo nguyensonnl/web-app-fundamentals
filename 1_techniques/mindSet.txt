@@ -61,3 +61,11 @@ Chưa học chắc phần này rồi nhảy qua phần khác
 Trường phái học theo dự án: Làm trước học sau
 
 Vẫn là xử lý data nhưng cách trình bày sẽ khác nhau ở mỗi level
+
+Học, code làm sao thành phản xạ luôn
+
+Bạn phải vững tư duy hướng thủ tục
+
+Cách xử lý data
+
+Xem tham khảo các cách làm khác của nhiều người

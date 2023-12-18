@@ -59,7 +59,28 @@ const createNewCategory = (element) => {
 
   renderData();
 
-  element.value = "";
+  resetForm(element);
+};
+
+const updatedCategory = (element) => {
+  const cateValue = element.value;
+  const idUpdate = btnSubmit.getAttribute("data-id");
+  const categories = JSON.parse(localStorage.getItem("categories")) || [];
+  const categoriesUpdate = categories.map((cate) => {
+    if (cate.id === +idUpdate) {
+      return { id: cate.id, name: cateValue };
+    } else {
+      return cate;
+    }
+  });
+
+  localStorage.setItem("categories", JSON.stringify(categoriesUpdate));
+  renderData();
+
+  resetForm(element);
+  btnSubmit.textContent = "Submit";
+  btnSubmit.removeAttribute("data-id");
+  btnSubmit.classList.remove("update");
 };
 
 const handleProcessAction = (e) => {
@@ -74,6 +95,15 @@ const handleProcessAction = (e) => {
     localStorage.setItem("categories", JSON.stringify(updatedCategories));
     renderData();
   }
+
+  if (clicked.classList.contains("edit")) {
+    const idCate = clicked.getAttribute("data-id");
+    const getCategoryById = categories.find((cate) => cate.id === +idCate);
+    nameCategory.value = getCategoryById.name;
+    btnSubmit.textContent = "Update";
+    btnSubmit.classList.add("update");
+    btnSubmit.setAttribute("data-id", idCate);
+  }
 };
 
 const handleSubmitForm = (e) => {
@@ -81,8 +111,16 @@ const handleSubmitForm = (e) => {
 
   const isValidForm = validateCategory(nameCategory);
   if (isValidForm) {
-    createNewCategory(nameCategory);
+    if (btnSubmit.classList.contains("update")) {
+      updatedCategory(nameCategory);
+    } else {
+      createNewCategory(nameCategory);
+    }
   }
+};
+
+const resetForm = (element) => {
+  return (element.value = "");
 };
 
 renderData();
