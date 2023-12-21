@@ -2,11 +2,9 @@
 
 ### Server Side
 
-- Javascript: Node, Express, Nest
-- PHP: Laravel
-- Java: Spring
-- C#: .NET
-- Go:
+- Javascript: Node, Express, Nest <=> PHP: Laravel
+- Java: Spring <=> C#: .NET
+- Go
 - Ruby on Rails
 - Python
 
@@ -20,3 +18,12 @@
 - Angular
 
 **UI Framework:**
+
+- Code web
+- Frontend dev
+- Backend dev
+- Fullstack dev
+- Devops
+- Cloud
+- Software Engineer
+- Solution Architect
