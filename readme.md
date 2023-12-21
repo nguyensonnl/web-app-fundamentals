@@ -1,6 +1,6 @@
 ### Web App Fundamentals
 
-### Sever Side
+### Server Side
 
 - Javascript: Node, Express, Nest
 - PHP: Laravel
@@ -14,6 +14,7 @@
 
 **Framework Javascript:**
 
+- Render data
 - React
 - Vue
 - Angular

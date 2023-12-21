@@ -1,1 +1,0 @@
-1. box-shadow: x y shadow width color;

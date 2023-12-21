@@ -1,4 +1,0 @@
-- flex: 1 1 0% -> flex-1
-- flex: 1 1 auto -> flex-auto
-- flex: 0 1 auto -> flex-initial
-- flex: none -> flex-none
