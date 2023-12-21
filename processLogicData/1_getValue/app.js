@@ -1,13 +1,15 @@
 const btn = document.querySelector(".btn");
 
-const handleSubmit = (event) => {
+const handleSubmitForm = (event) => {
   event.preventDefault();
   //lấy ra object get theo key value
 
+  //type: text, password, textarea
   //console.log(document.querySelector(".email").value);
   //console.log(document.querySelector(".password").value);
   //console.log(document.querySelector(".description").value);
 
+  //type: checkbox, radio
   const allGender = document.querySelectorAll(".gender");
   const valueGender2 = document.querySelector(".gender:checked");
   let valueGender = "";
@@ -30,4 +32,4 @@ const handleSubmit = (event) => {
   console.log(valueHobby);
 };
 
-btn.addEventListener("click", handleSubmit);
+btn.addEventListener("click", handleSubmitForm);
