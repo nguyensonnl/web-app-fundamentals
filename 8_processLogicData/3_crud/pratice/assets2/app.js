@@ -18,10 +18,10 @@ const renderData = () => {
                     <td>${idx + 1}</td>
                     <td>${item.name}</td>
                     <td>
-                        <button class="edit__cate" data-id=${
+                        <button class="edit__cate btn btn-update" data-id=${
                           item.id
                         }>Edit</button>
-                        <button class="delete__cate" data-id=${
+                        <button class="btn btn-delete delete__cate" data-id=${
                           item.id
                         }>Delete</button>
                     </td>
@@ -66,12 +66,40 @@ function createNewCategory() {
   cateElement.value = "";
 }
 
+function updatedCatetory() {
+  const categories = getCategories();
+  const idCate = btnElement.getAttribute("data-id");
+
+  const updatedCategory = categories.map((item) => {
+    if (item.id === +idCate) {
+      return {
+        id: +idCate,
+        name: cateElement.value,
+      };
+    } else {
+      return item;
+    }
+  });
+
+  localStorage.setItem("categories", JSON.stringify(updatedCategory));
+  renderData();
+
+  btnElement.textContent = "Submit";
+  btnElement.removeAttribute("data-id");
+  btnElement.classList.remove("update");
+  cateElement.value = "";
+}
+
 function handleSumit(e) {
   e.preventDefault();
 
   const isValid = validation();
   if (isValid) {
-    createNewCategory();
+    if (btnElement.classList.contains("update")) {
+      updatedCatetory();
+    } else {
+      createNewCategory();
+    }
   }
 }
 
@@ -91,6 +119,18 @@ function handleProcessAction(e) {
       renderData();
       cateElement.value = "";
     }
+  }
+
+  if (clicked.classList.contains("edit__cate")) {
+    const categories = getCategories();
+    const idCate = clicked.getAttribute("data-id");
+    btnElement.textContent = "Update";
+
+    const categoryById = categories.find((item) => item.id === +idCate);
+    cateElement.value = categoryById.name;
+
+    btnElement.classList.add("update");
+    btnElement.setAttribute("data-id", +idCate);
   }
 }
 

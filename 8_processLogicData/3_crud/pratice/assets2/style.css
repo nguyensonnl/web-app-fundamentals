@@ -44,6 +44,25 @@ body {
   border: 2px solid blue;
 }
 
+.btn {
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: blue;
+}
+
+.btn-delete {
+  background-color: red;
+}
+
 .btn__submit {
   outline: none;
   border: none;
