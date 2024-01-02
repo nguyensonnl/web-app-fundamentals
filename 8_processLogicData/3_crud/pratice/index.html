@@ -2,36 +2,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRUD Pratice</title>
+    <title>CRUD2</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="app">
       <form class="form">
         <div class="form-group">
-          <label>Tên danh mục:</label>
+          <label for="cate">Tên danh mục</label>
           <input
+            id="cate"
             type="text"
             placeholder="Tên danh mục..."
-            class="category-name"
+            class="cate__name"
           />
           <div class="form-error"></div>
         </div>
-        <button class="btn-cate">Submit</button>
-      </form>
 
-      <table class="table-category">
+        <button class="btn__submit">Submit</button>
+      </form>
+      <table class="table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Action</th>
+            <td>#</td>
+            <td>Name</td>
+            <td>Action</td>
           </tr>
         </thead>
-        <tbody class="list-cate"></tbody>
+        <tbody class="table__list"></tbody>
       </table>
     </div>
-
     <script src="./app.js"></script>
   </body>
 </html>
