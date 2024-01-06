@@ -80,12 +80,36 @@ function createNewCategory() {
   renderData();
 }
 
+function updatedCategory() {
+  const categories = getData();
+  const idCate = btnSubmit.getAttribute("data-id");
+  const updatedCategory = categories.map((item) => {
+    if (item.id === +idCate) {
+      return {
+        id: +idCate,
+        name: inputElement.value,
+      };
+    } else {
+      return item;
+    }
+  });
+  updatedData(updatedCategory);
+  renderData();
+  resetForm();
+  btnSubmit.classList.remove("update");
+  btnSubmit.removeAttribute("data-id");
+}
+
 const handleSubmitForm = (e) => {
   e.preventDefault();
 
   const isValid = validation();
   if (isValid) {
-    createNewCategory();
+    if (btnSubmit.classList.contains("update")) {
+      updatedCategory();
+    } else {
+      createNewCategory();
+    }
   }
 };
 
@@ -98,6 +122,17 @@ function handleProcessAction(e) {
 
     updatedData(updatedCategories);
     renderData();
+  }
+
+  if (clicked.classList.contains("edit")) {
+    const idCate = clicked.getAttribute("data-id");
+    const categories = getData();
+    btnSubmit.textContent = "Update";
+    btnSubmit.setAttribute("data-id", +idCate);
+    btnSubmit.classList.add("update");
+
+    const getCategoryById = categories.find((item) => item.id === +idCate);
+    inputElement.value = getCategoryById.name;
   }
 }
 
