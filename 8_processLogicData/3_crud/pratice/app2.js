@@ -73,14 +73,68 @@ function renderData() {
   tbodyElement.innerHTML = htmlResult;
 }
 
+function updatedCategory() {
+  const categories = getCategories();
+  const idCate = btnSubmit.getAttribute("data-id");
+
+  const updatedCategory = categories.map((item) => {
+    if (item.id === +idCate) {
+      return {
+        id: +idCate,
+        name: inputElement.value,
+      };
+    } else {
+      return item;
+    }
+  });
+
+  localStorage.setItem("categories", JSON.stringify(updatedCategory));
+  renderData();
+  resetForm(inputElement);
+
+  btnSubmit.removeAttribute("data-id");
+  btnSubmit.classList.remove("update");
+  btnSubmit.textContent = "Submit";
+}
+
 function handleSubmitForm(e) {
   e.preventDefault();
 
   const isValidForm = validationForm();
   if (isValidForm) {
-    createNewCategory();
+    if (btnSubmit.classList.contains("update")) {
+      updatedCategory();
+    } else {
+      createNewCategory();
+    }
+  }
+}
+
+function handleProcessAction(e) {
+  const clicked = e.target;
+
+  if (clicked.classList.contains("edit")) {
+    const categories = getCategories();
+    const idCate = clicked.getAttribute("data-id");
+
+    const category = categories.find((item) => item.id === +idCate);
+    inputElement.value = category.name;
+
+    btnSubmit.textContent = "Update";
+    btnSubmit.classList.add("update");
+    btnSubmit.setAttribute("data-id", +idCate);
+  }
+
+  if (clicked.classList.contains("delete")) {
+    const categories = getCategories();
+    const idCate = clicked.getAttribute("data-id");
+
+    const updatedCategories = categories.filter((item) => item.id !== +idCate);
+    localStorage.setItem("categories", JSON.stringify(updatedCategories));
+    renderData();
   }
 }
 
 renderData();
 btnSubmit.addEventListener("click", handleSubmitForm);
+tbodyElement.addEventListener("click", handleProcessAction);
